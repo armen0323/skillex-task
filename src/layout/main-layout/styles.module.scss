@@ -1,0 +1,14 @@
+@import "styles/flex";
+@import "styles/mixin";
+@import "styles/vars";
+
+.wrapper {
+  background : $grey_light;
+  width      : 100%;
+  @include flex-column;
+  gap        : 10px;
+
+  .container {
+	padding : 0 100px;
+  }
+}

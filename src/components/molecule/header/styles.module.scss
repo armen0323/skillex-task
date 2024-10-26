@@ -1,0 +1,61 @@
+@import "styles/flex";
+@import "styles/mixin";
+@import "styles/vars";
+
+.wrapper {
+  width      : 100%;
+  @include flex-align-between;
+  background : $accent;
+  padding    : 10px 100px;
+
+  .content {
+	width: 100%;
+	@include flex-align;
+	gap : 24px;
+
+	.info {
+	  @include flex-align;
+	  gap : 4px;
+
+	  .text {
+		@include font_size_lg;
+		color       : $white;
+		line-height : normal;
+		white-space : nowrap;
+	  }
+	}
+  }
+
+  .block {
+	@include flex-align;
+	gap : 8px;
+
+	.phone {
+	  cursor : pointer;
+	  @include flex-align;
+	  gap    : 4px;
+
+	  svg {
+		path {
+		  stroke : $white;
+		}
+	  }
+
+	  .number {
+		@include font_size_m;
+		color : $white;
+	  }
+	}
+
+	.icon {
+	  svg {
+		width  : 30px;
+		height : 30px;
+
+		path {
+		  stroke : $white;
+		}
+	  }
+	}
+  }
+}
