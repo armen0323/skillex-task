@@ -6,8 +6,9 @@ import {Header} from "components";
 const MainLayout: FC<TMainLayout> = ({children}) => {
     return <section className={styles.wrapper}>
         <Header/>
-        <div className={styles.container}></div>
-        {children}
+        <div className={styles.container}>
+            {children}
+        </div>
     </section>
 }
 export default MainLayout

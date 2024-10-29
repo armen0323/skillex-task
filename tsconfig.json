@@ -20,11 +20,21 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"],
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ]
     }
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
   ]
 }
