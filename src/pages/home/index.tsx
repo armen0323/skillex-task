@@ -3,7 +3,7 @@ import {MainLayout} from "../../layout";
 
 const Home = () => {
     return <MainLayout>
-        <div></div>
+        <div className={styles.wrapper}></div>
     </MainLayout>
 }
 
