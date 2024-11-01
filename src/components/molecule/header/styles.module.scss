@@ -3,15 +3,27 @@
 @import "styles/vars";
 
 .wrapper {
+  z-index    : 2;
+  position   : fixed;
+  top        : 0;
+  left       : 0;
   width      : 100%;
   @include flex-align-between;
+  gap: 8px;
   background : $accent;
   padding    : 10px 100px;
+  @include customBreakpointSize(1300px) {
+	padding : 10px 40px;
+  }
+
+  @include customBreakpointSize(422px){
+	padding: 10px;
+  }
 
   .content {
-	width: 100%;
+	width : 100%;
 	@include flex-align;
-	gap : 24px;
+	gap   : 24px;
 
 	.info {
 	  @include flex-align;
@@ -22,11 +34,24 @@
 		color       : $white;
 		line-height : normal;
 		white-space : nowrap;
+		@include customBreakpointSize(510px){
+		  display: none;
+		}
 	  }
+	}
+
+	.input {
+	  max-width : 400px;
 	}
   }
 
   .block {
+
+	.filters {
+	  @include flex-column;
+	  gap       : 24px;
+	}
+
 	@include flex-align;
 	gap : 8px;
 

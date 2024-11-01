@@ -1,1 +1,5 @@
 export {default as Header} from './header'
+export {default as CheckboxGroup} from './checkbox-group'
+export {default as ColorPickerGroup} from './color-picker-group'
+export {default as Phone} from './phone'
+export {default as RightSidebar} from './right-sidebar'

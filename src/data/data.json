@@ -1,0 +1,148 @@
+{
+  "smartphones": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro",
+      "brand": "Apple",
+      "price": 999.99,
+      "color": "gray",
+      "rating": 2,
+      "hasGift": true,
+      "hasDiscount": false,
+      "operatingSystem": "iOS",
+      "image": "https://example.com/images/iphone15pro.jpg"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 14",
+      "brand": "Apple",
+      "price": 799.99,
+      "color": "black",
+      "rating": 4,
+      "hasGift": false,
+      "hasDiscount": true,
+      "operatingSystem": "iOS",
+      "image": "https://example.com/images/iphone14.jpg"
+    },
+    {
+      "id": 3,
+      "name": "iPhone SE (2023)",
+      "brand": "Apple",
+      "price": 499.99,
+      "color": "gold",
+      "rating": 3,
+      "hasGift": true,
+      "hasDiscount": true,
+      "operatingSystem": "iOS",
+      "image": "https://example.com/images/iphonese2023.jpg"
+    },
+    {
+      "id": 4,
+      "name": "iPhone 13 Mini",
+      "brand": "Apple",
+      "price": 699.99,
+      "color": "blue",
+      "rating": 4,
+      "hasGift": false,
+      "hasDiscount": true,
+      "operatingSystem": "iOS",
+      "image": "https://example.com/images/iphone13mini.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Galaxy S23 Ultra",
+      "brand": "Samsung",
+      "price": 1199.99,
+      "color": "black",
+      "rating": 5,
+      "hasGift": true,
+      "hasDiscount": true,
+      "operatingSystem": "Android",
+      "image": "https://example.com/images/galaxys23ultra.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Galaxy A54",
+      "brand": "Samsung",
+      "price": 449.99,
+      "color": "white",
+      "rating": 4,
+      "hasGift": false,
+      "hasDiscount": true,
+      "operatingSystem": "Android",
+      "image": "https://example.com/images/galaxya54.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Pixel 8 Pro",
+      "brand": "Pixel",
+      "price": 999.99,
+      "color": "gray",
+      "rating": 5,
+      "hasGift": true,
+      "hasDiscount": false,
+      "operatingSystem": "Android",
+      "image": "https://example.com/images/pixel8pro.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Nokia X30 5G",
+      "brand": "Nokia",
+      "price": 549.99,
+      "color": "blue",
+      "rating": 3,
+      "hasGift": false,
+      "hasDiscount": true,
+      "operatingSystem": "Android",
+      "image": "https://example.com/images/nokiax305g.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Surface Duo 2",
+      "brand": "Microsoft",
+      "price": 1499.99,
+      "color": "gold",
+      "rating": 4,
+      "hasGift": true,
+      "hasDiscount": false,
+      "operatingSystem": "Windows",
+      "image": "https://example.com/images/surfaceduo2.jpg"
+    },
+    {
+      "id": 10,
+      "name": "HP Elite x3",
+      "brand": "HP",
+      "price": 799.99,
+      "color": "black",
+      "rating": 3,
+      "hasGift": false,
+      "hasDiscount": true,
+      "operatingSystem": "Windows",
+      "image": "https://example.com/images/hpelitex3.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Alcatel Idol 4 Pro",
+      "brand": "Alcatel",
+      "price": 299.99,
+      "color": "white",
+      "rating": 2,
+      "hasGift": true,
+      "hasDiscount": false,
+      "operatingSystem": "Windows",
+      "image": "https://example.com/images/idol4pro.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Lumia 950 XL",
+      "brand": "Microsoft",
+      "price": 399.99,
+      "color": "gray",
+      "rating": 4,
+      "hasGift": false,
+      "hasDiscount": true,
+      "operatingSystem": "Windows",
+      "image": "https://example.com/images/lumia950xl.jpg"
+    }
+  ]
+}

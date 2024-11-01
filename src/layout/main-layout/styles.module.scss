@@ -9,7 +9,14 @@
   gap        : 10px;
 
   .container {
-	padding : 0 100px;
-    background : $grey_light;
+	margin-top: 60px;
+	padding    : 0 100px;
+	background : $grey_light;
+	@include customBreakpointSize(1300px){
+	  padding    : 0 40px;
+	}
+	@include customBreakpointSize(422px){
+	  padding: 10px;
+	}
   }
 }
