@@ -16,6 +16,6 @@ Skillex Task is a online shop application built with React.js, TypeScript, and R
 
 1. Clone the repository: git clone https://github.com/armen0323/skillex-task
 2.yarn install
-3.json-server --watch db.json --port 4000
+3.cd src/data && json-server --watch db.json --port 4000
 4.yarn dev
 5.Enjoy
