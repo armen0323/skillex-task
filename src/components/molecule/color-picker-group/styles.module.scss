@@ -1,0 +1,45 @@
+@import "styles/flex";
+@import "styles/mixin";
+@import "styles/vars";
+
+.wrapper {
+  @include flex-column;
+  gap : 8px;
+
+  .text {
+	@include font_size_s;
+	line-height : normal;
+	font-weight : 400;
+	color       : $black;
+  }
+
+  .container {
+	@include flex-align;
+	gap           : 8px;
+	flex-wrap     : wrap;
+	border        : 1px solid $accent;
+	border-radius : 8px;
+	padding       : 20px 10px;
+
+	.selected {
+	  border        : 2px solid $accent !important;
+	  border-radius : 6px;
+	}
+
+
+	.colorPickerWrapper {
+	  border        : 2px solid transparent;
+	  border-radius : 8px;
+	  cursor        : pointer;
+	  padding       : 2px;
+
+	  .colorPicker{
+		width         : 24px;
+		height        : 24px;
+		border-radius : 8px;
+	  }
+	}
+  }
+
+
+}

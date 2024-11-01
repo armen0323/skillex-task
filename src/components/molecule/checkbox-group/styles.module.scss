@@ -1,0 +1,22 @@
+@import "styles/flex";
+@import "styles/mixin";
+@import "styles/vars";
+
+.wrapper {
+  @include flex-column;
+  gap     : 8px;
+
+
+  .text {
+	@include font_size_s;
+	line-height : normal;
+	font-weight : 400;
+	color       : $black;
+  }
+
+  .container {
+	border        : 1px solid $accent;
+	border-radius : 8px;
+	padding : 20px 10px;
+  }
+}
