@@ -1,5 +1,4 @@
 import styles from './styles.module.scss'
-import img from '../../../assets/images/iphone16.jpeg'
 import {Icon} from "components";
 import {Rate} from "antd";
 import {FC} from "react";
@@ -8,10 +7,12 @@ import {
     GiftOutlined,
 } from '@ant-design/icons';
 
-const Phone: FC<TPhoneProps> = ({name, rating, price, color,hasDiscount,hasGift}) => {
+const Phone: FC<TPhoneProps> = ({name, rating,img, price, color, hasDiscount, hasGift}) => {
+    console.log(img,'ppp')
+
     return <div className={styles.wrapper}>
         <div className={styles.img}>
-            <img src={img} alt={'kkk'} width={'100%'} height={'100%'}/>
+            <img src={img} alt={'phone'} width={'100%'} height={'100%'}/>
         </div>
         <p className={styles.name}>{name} ({color})</p>
         <div className={styles.price}>
@@ -20,18 +21,18 @@ const Phone: FC<TPhoneProps> = ({name, rating, price, color,hasDiscount,hasGift}
         </div>
         <div className={styles.rate}>
             <div className={styles.star}>
-                <Rate value={price}/>
+                <Rate value={Math.round(rating)}/>
             </div>
-    <div className={styles.special_offer}>
-        {
-            hasDiscount && <p>Զեղչ</p>
+            <div className={styles.special_offer}>
+                {
+                    hasDiscount && <p className={styles.infoTextPrice}>Զեղչ</p>
 
-        }
-        {
-            hasGift && <GiftOutlined />
+                }
+                {
+                    hasGift && <GiftOutlined style={{ color: 'red' }} />
 
-        }
-    </div>
+                }
+            </div>
         </div>
 
     </div>

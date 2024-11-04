@@ -5,4 +5,5 @@ export type TPhoneProps = {
     color: string
     hasDiscount : boolean
     hasGift : boolean
+    img:string
 }

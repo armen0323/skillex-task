@@ -25,7 +25,7 @@ const Home: FC = () => {
         rating: []
     }
     const [filters, setFilters] = useState<TFilterData>()
-    const {data,isLoading} = useGetData(filters as TFilterData)
+    const {data, isLoading} = useGetData(filters as TFilterData)
 
 
     useEffect(() => {
@@ -79,10 +79,12 @@ const Home: FC = () => {
                 <div className={styles.container}>
                     {
                         !isLoading ? <>
-                            { data?.length ? data.map(element => {
-                                return <Phone key={element.id} name={element.name} rating={element.rating} color={element.color}
-                                              price={element.price} hasGift={element?.hasGift} hasDiscount={element?.hasDiscount}/>
-                            }) :null
+                            {data?.length ? data.map(element => {
+                                return <Phone img={element.image} key={element.id} name={element.name}
+                                              rating={element.rating} color={element.color}
+                                              price={element.price} hasGift={element?.hasGift}
+                                              hasDiscount={element?.hasDiscount}/>
+                            }) : null
                             }
                         </> : <div className={styles.loading}><Spin/></div>
                     }
